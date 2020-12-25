@@ -30,13 +30,13 @@ File with R script "run_analysis.R" performs the data preparation and then follo
          Train data which recorded code labels of activities.
          
  **iii. Merges the training and the test sets to create one data set.** 
- * X - Used rbind() function to merge x_train and x_test.  
- * Y - Used rbind() function to merge y_train and y_test.  
- * Subject - Used rbind() function to merge subject_train and subject_test.  
- * Merged_Data - Used cbind() function to merge Subject, X and Y.  
+ * X: 10299 rows, 561 columns - Used rbind() function to merge x_train and x_test.  
+ * Y: 10299 rows, 1 column - Used rbind() function to merge y_train and y_test.  
+ * Subject: 10299 rows, 1 column - Used rbind() function to merge subject_train and subject_test.  
+ * Merged_Data: 10299 rows, 563 columns - Used cbind() function to merge Subject, X and Y.  
   
  **iv. Extracts only the measurements on the mean and standard deviation for each measurement.**    
- * TidyData is produced by subsetting Merged_Data. Choosing columns("subject", "code" and the measurements) on the mean
+ * TidyData (10299 rows, 88 columns) is produced by subsetting Merged_Data. Choosing columns("subject", "code" and the measurements) on the mean
       and standard deviation for each measurement.
 
  **v. Uses descriptive activity names to name the activities in the data set.**  
